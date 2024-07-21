@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #8BC6EC;
+background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+
+        }
+        .box{
+           width: 40vw;
+           margin: 50px auto;
+           font-size: larger;
+        }
+        .submit, input, select{
+            width: 80%;
+            margin: 10px auto;
+            height: 30px;
+            display: block;
+        }
+        textarea{
+            width: 80%;
+            margin: 5px auto;
+            display: block;
+        }
+        h2{
+            text-align: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        legend{
+            background-color: rgb(80, 80, 80);
+            color: white;
+            padding: 5px;
+        }
+        fieldset{
+            border: 2px solid rgb(80, 80, 80);
+            border-radius: 10px;
+            box-shadow: 3px 3px 10px;
+        }
+        label{
+            margin-left: 25px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="box">
+        <fieldset>
+            <legend>Book an Appointment</legend>
+            <h2>Doctor Appointment Booking</h2>
+            <form>
+                <label>
+                    Name: <br>
+                    <input type="text">
+                </label><br>
+
+                <label>
+                    Email: <br>
+                    <input type="email">
+                </label><br><br>
+
+                <label>
+                    Date: <br>
+                    <input type="date">
+                </label><br><br>
+
+                <label>
+                    Time: <br>
+                    <input type="time">
+                </label><br><br>
+
+                <label>
+                    Select Doctor: <br>
+                    <select >
+                        <option value="">Please Choose an Option</option>
+                        <option value="khan">Dr.Khan</option>
+                        <option value="akbar">Dr.Akbar</option>
+                        <option value="gupta">Dr.Gupta</option>
+                        <option value="lamba">Dr.Lamba</option>
+                    </select>
+                </label><br><br>
+                
+                <label>
+                    Reason for Visit
+                    <textarea rows="10" cols="30"></textarea>
+                </label><br><br>
+
+                <input type="submit" value="Book Appointment" class="submit">
+                <input type="reset" value="Reset" class="submit">
+            </form>
+        </fieldset>
+        
+    </div>
+</body>
+</html>
